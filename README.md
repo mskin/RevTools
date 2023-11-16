@@ -4,7 +4,7 @@ We are trying to track changes to the Revit Model as a result of RFI responses, 
 We are exploring the use of revisions for this.  What we dont want is a new revision for every RFI as our model would contain 1000s of revisions.  Same for PRs, CCDs, etc...
 Problem: there us no good, internal way to schedule and filter revisions within revit.
 
-The idea is to have a Revision for RFIs and use the Comments to designate which RFI the cloud is for.  This can be filtered out and exported to a list, or hidden on sheets.
+The idea is to have a single Revision for RFIs and use the Comments to designate which RFI the cloud is for.  This can be filtered out and exported to a list, or hidden on sheets.
 
 This tools lists the Revisions in the model. 
 When a Revision is double Clicked, it populated the "Sheets with this revision" with all the Revision Clouds in that revision.
