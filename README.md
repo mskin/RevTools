@@ -11,6 +11,8 @@ When a Revision is double Clicked, it populated the "Sheets with this revision" 
 With that filtered list, you can...
 1. Export the Revisions to (my companies standard format for narratives) a word file.
 2. Isolate all those revisions in the project, by hiding all the others that arent in this list
-3. Unhide all revisions that are currently hidden. 
+3. Unhide all revisions that are currently hidden.
+
+To test it out, you should be able to copy the .dll from the main directory and the .addin file from the 
 
 ![IM1](https://github.com/mskin/RevTools/assets/10675562/96867478-fc06-46f3-8825-bbd7b20bc25a)
