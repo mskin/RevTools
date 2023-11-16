@@ -13,6 +13,6 @@ With that filtered list, you can...
 2. Isolate all those revisions in the project, by hiding all the others that arent in this list
 3. Unhide all revisions that are currently hidden.
 
-To test it out, you should be able to copy the .dll from the main directory and the .addin file from the 
+To test it out, you should be able to copy the .dll from the main directory and the .addin file from the RevTools directory into your Addins folder for Revit 2023.  This particular DLL was compiled in 2023.
 
 ![IM1](https://github.com/mskin/RevTools/assets/10675562/96867478-fc06-46f3-8825-bbd7b20bc25a)
