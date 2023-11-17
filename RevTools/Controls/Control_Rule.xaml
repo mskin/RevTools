@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="330">
     <StackPanel Orientation="Horizontal" Background="#FFE4E4E4">
-        <ComboBox Margin="5" Width="135" SelectedIndex="0" Name="CB_FilterMethod" SelectionChanged="CB_FilterMethod_SelectionChanged" SelectedValue="{Binding SelectedFilterMethod, RelativeSource={RelativeSource AncestorType=UserControl}}" SelectedValuePath="Content">
+        <ComboBox Margin="5" Width="100" SelectedIndex="0" Name="CB_FilterMethod" SelectionChanged="CB_FilterMethod_SelectionChanged" SelectedValue="{Binding SelectedFilterMethod, RelativeSource={RelativeSource AncestorType=UserControl}}" SelectedValuePath="Content">
             <ComboBoxItem Content="Contains" />
             <ComboBoxItem Content="Does Not Contain" />
             <ComboBoxItem Content="Begins With" />
@@ -15,7 +15,7 @@
             <ComboBoxItem Content="Ends With" />
             <ComboBoxItem Content="Does Not End With" />
         </ComboBox>
-        <TextBox Width="131" Margin="5" Background="White" Name="TB_Criteria" KeyUp="TB_Criteria_KeyUp" Text="{Binding CriteriaText, RelativeSource={RelativeSource AncestorType=UserControl}}"></TextBox>
+        <TextBox Width="115" Margin="5" Background="White" Name="TB_Criteria" KeyUp="TB_Criteria_KeyUp" Text="{Binding CriteriaText, RelativeSource={RelativeSource AncestorType=UserControl}}"></TextBox>
         <Button Width="25" Margin="5" FontWeight="Bold" Foreground="#FFF30000" Name="BTN_Remove" Click="BTN_Remove_Click">X</Button>
     </StackPanel>
 </UserControl>
