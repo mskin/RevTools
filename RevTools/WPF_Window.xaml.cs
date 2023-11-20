@@ -260,46 +260,7 @@ namespace RevTools
 
         private void btn_SavreExcelNarrative_Click(object sender, RoutedEventArgs e)
         {
-            FilteredElementCollector CollectionOfRevisionsAsElement = new FilteredElementCollector(doc).WhereElementIsNotElementType().OfCategory(BuiltInCategory.OST_RevisionClouds).OfClass(typeof(RevisionCloud));
-            List<RevisionCloud> revisionClouds = new List<RevisionCloud>();
-
-            foreach (Element el in CollectionOfRevisionsAsElement)
-            {
-                RevisionCloud rc = el as RevisionCloud;
-                revisionClouds.Add(rc);
-            }
-
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "text (*.txt)|*.txt";
-
-            if (saveFileDialog.ShowDialog() == true) // Show the dialog and check if the result is OK.
-            {
-                using (StreamWriter sw = new StreamWriter(saveFileDialog.FileName))
-                {
-                    sw.WriteLine("Sequence|RevisionNumber|Date|Description|IssuedTo|IssuedBy|Issued|Sheet|ElementId");
-
-                    foreach (RevisionCloud revisionCloud in revisionClouds)
-                    {
-                        Revision revision = doc.GetElement(revisionCloud.RevisionId) as Revision;
-                        ViewSheet vs = doc.GetElement(revisionCloud.OwnerViewId) as ViewSheet;
-
-                        string sequenceNumber = revision.SequenceNumber.ToString();
-                        string revisionNumber = revision.RevisionNumber.ToString();
-                        string date = revision.RevisionDate.ToString();
-                        string description = revision.Description.ToString();
-                        string issuedTo = revision.IssuedTo.ToString();
-                        string issuedBy = revision.IssuedBy.ToString();
-                        bool issued = revision.Issued;
-                        string sheet = vs.SheetNumber.ToString();
-                        string elementId = revisionCloud.Id.ToString();
-
-                        // Write data in a pipe delineated format
-                        sw.WriteLine($"{sequenceNumber}|{revisionNumber}|{date}|{description}|{issuedTo}|{issuedBy}|{issued}|{sheet}|{elementId}");
-                    }
-                }
-
-                Process.Start(saveFileDialog.FileName);
-            }
+            ExcellGenerator.CreateExcell(doc);
         }
     }
 }

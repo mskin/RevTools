@@ -58,7 +58,7 @@
             <Label Grid.Row="0" Background="Azure" BorderBrush="Black" BorderThickness="1">Actions</Label>
             <StackPanel Grid.Row="1" VerticalAlignment="Stretch">
                 <Button Name="btn_SavreWordNarrative" Content="EXPORT FILTERED NARRATIVE FORMAT - WORD" Margin="5,2" Click="btn_SavreWordNarrative_Click" FontSize="10"></Button>
-                <Button  Name="btn_SavreExcelNarrative" Content="EXPORT ALL REVISIONS - PIPE Deliniated" Margin="5,2" Click="btn_SavreExcelNarrative_Click" FontSize="10"></Button>
+                <Button  Name="btn_SavreExcelNarrative" Content="EXPORT ALL REVISIONS - EXCELL" Margin="5,2" Click="btn_SavreExcelNarrative_Click" FontSize="10"></Button>
                 <Button  Content="ISOLATE REVISIONS BY FILTER" Margin="5,2" Name="btn_Isolate" Click="btn_Isolate_Click" FontSize="10"></Button>
                 <Button  Content="UNHIDE ALL REVISIONS" Margin="5,2" Name="btn_UnhideRevisinons" Click="btn_UnhideRevisinons_Click" FontSize="10"></Button>
             </StackPanel>
