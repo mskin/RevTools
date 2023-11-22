@@ -6,15 +6,15 @@
     <Assembly>RevTools.dll</Assembly>
     <FullClassName>RevTools.Command</FullClassName>
     <ClientId>6021d764-df68-4030-bbcc-2c868b1ef1b6</ClientId>
-    <VendorId>com.typepad.thebuildingcoder</VendorId>
-    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+    <VendorId>none</VendorId>
+    <VendorDescription>Marek Falkowski</VendorDescription>
   </AddIn>
   <AddIn Type="Application">
     <Name>Application RevTools</Name>
     <Assembly>RevTools.dll</Assembly>
     <FullClassName>RevTools.App</FullClassName>
     <ClientId>ec66db0b-8c3b-4a82-92b5-9bb169088be8</ClientId>
-    <VendorId>com.typepad.thebuildingcoder</VendorId>
-    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+    <VendorId>none</VendorId>
+    <VendorDescription>Marek Falkowski</VendorDescription>
   </AddIn>
 </RevitAddIns>
